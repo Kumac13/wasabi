@@ -79,7 +79,7 @@ struct EfiGraphicsOutputProtocolMode<'a> {
 #[repr(C)]
 #[derive(Debug)]
 struct EfiGraphicsOutputProtocol<'a> {
-    reserved: [u64; 2],
+    reserved: [u64; 3],
     pub mode: &'a EfiGraphicsOutputProtocolMode<'a>,
 }
 
